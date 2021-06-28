@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="preload" href="fonts/Exo2-Bold.woff2" as=”font” type=”font/woff2″>
+	<link rel="preload" href="fonts/Exo2-Medium.woff2" as=”font” type=”font/woff2″>
+	<link rel="preload" href="fonts/Montserrat-Bold.woff2" as=”font” type=”font/woff2″>
+	<link rel="preload" href="fonts/Montserrat-Medium.woff2" as=”font” type=”font/woff2″>
+	<link rel="preload" href="fonts/Montserrat-Regular.woff2" as=”font” type=”font/woff2″>
+	<title>Quantum</title>
+</head>
+
+<body>
+	<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a href="https://qgame.online/">
+						<svg class="header__logo wow animate__animated animate__bounceIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="361" height="84" viewBox="0 0 361 84">
+							<image id="logo.vg_horizont" data-name="logo.vg horizont" width="361" height="84" xlink:href="data:img/png;base64,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" />
+						</svg>
+					</a>
+					<h1 class="header__title wow animate__animated animate__fadeIn"> Что такое<br><span>Quantum Cloud<br> coporate</span></h1>
+					<p class="header__description wow animate__animated animate__bounceInUp"> Сервис для проведения тимбилдингов в формате командных<br> интеллектуальных игр</p>
+					<img class="superman wow animate__animated animate__zoomIn" src="img/illustrations/superman-phone.webp" alt="">
+					<div class="header__control wow animate__animated animate__backInUp">
+						<a class="header__link header__link--blue" href="download/Тимбилдинг%20будущего%20с%20quantum%20cloud%20(2).pdf" target="_blank">Презентация</a>
+						<a class="header__link" href="download/Коммерческое%20предложение%20Quantum%20Cloud%202021.pdf" download="download/Коммерческое предложение Quantum Cloud 2021.pdf" target="_blank">Скачать КП</a>
+					</div>
+				</div>
+				<div class="header__picture wow animate__animated animate__zoomIn">
+					<img src="img/illustrations/superman.webp" alt="">
+				</div>
+			</div>
+		  <img class="header__clouds" src="img/clouds.webp" alt="">
+		</header>
+	<main class="main">
+		<section class="about wow bounceInUp">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__block">
+						<div class="about__item about__item--left wow animate__ animate__bounceIn">
+							<p class="about__text">Повышение нацеленности на результат</p>
+							<div class="cirlce"></div>
+						</div>
+						<div class="about__item about__item--right wow animate__ animate__bounceIn">
+							<div class="cirlce"></div>
+							<p class="about__text">Рост лояльности персонала к работодателю</p>
+						</div>
+					</div>
+					<div class="about__block about__block--center">
+						<div class="about__left">
+							<div class="about__item about__item--left wow animate__ animate__bounceIn">
+								<p class="about__text">Укрепление командного духа, сплоченности</p>
+								<div class="cirlce"></div>
+							</div>
+							<div class="about__item about__item--left wow animate__ animate__bounceIn">
+								<p class="about__text">Улучшение внутрикорпоративных коммуникаций</p>
+								<div class="cirlce"></div>
+							</div>
+						</div>
+						<img class="about__image" src="img/illustrations/illustration.webp" alt="">
+						<div class="about__right">
+							<div class="about__item about__item--right wow animate__ animate__bounceIn">
+								<div class="cirlce"></div>
+								<p class="about__text">Ощутимая польза для бизнеса, а не просто досуг</p>
+							</div>
+							<div class="about__item about__item--right wow animate__ animate__bounceIn">
+								<div class="cirlce"></div>
+								<p class="about__text">Повышение эффективности в повседневной работе</p>
+							</div>
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="about__item about__item--left wow animate__ animate__bounceIn">
+							<p class="about__text">Психологическая разгрузка после напряженного периода</p>
+							<div class="cirlce"></div></div>
+						<div class="about__item about__item--right wow animate__ animate__bounceIn">
+							<div class="cirlce"></div>
+							<p class="about__text">Внедрение корпоративных ценностей, миссии компании</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features">
+			<div class="container">
+				<h2 class="section__title section__title--light wow animate__animated animate__fadeInUp"><span>Что</span> вы получите</h2>
+				<div class="features__element">
+					<div class="features__info">
+						<p class="features__text wow animate__animated animate__fadeInUp">Проводите крутые и современные тимбилдинги без
+							<br> привлечения сторонних организаторов и переплат</p>
+						<ul class="features__list">
+							<li class="features__item wow animate__animated animate__fadeInRight">Легкая настройка и запуск</li>
+							<li class="features__item wow animate__animated animate__fadeInRight">Интересный формат</li>
+							<li class="features__item wow animate__animated animate__fadeInRight">Идеально на удаленке и в офисе</li>
+							<li class="features__item wow animate__animated animate__fadeInRight">Неограниченное количество игр в день</li>
+							<li class="features__item wow animate__animated animate__fadeInRight">Более 20,000 вопросов в базе Quantum</li>
+							<li class="features__item wow animate__animated animate__fadeInRight">Поддержка личного аккаунта-манеджера 24/7</li>
+						</ul>
+					</div>
+					<picture>
+						<source srcset="img/illustrations/illustration2-phone.webp" media="(max-width: 768px)"> <img class="features__image wow animate__animated animate__bounceInRight" src="img/illustrations/illustration2.webp" alt=""> </picture>
+				</div>
+				<div class="features__element">
+					<div class="features__plan plan">
+						<h2 class="features__title wow animate__animated animate__slideInLeft"><span>Стоимость</span> сервиса</h2>
+						<div class="plan__wrapper">
+							<div class="plan__element wow animate__animated animate__jackInTheBox">
+								<h3 class="plan__lead">месяц</h3>
+								<p class="plan__price">10,000р</p> <img src="img/icons/calendar-m.png" alt=""></div>
+							<div class="plan__element wow animate__animated animate__jackInTheBox">
+								<h3 class="plan__lead">Год</h3>
+								<p class="plan__price">100,000р</p> <img src="img/icons/calendar-y.png" alt=""></div>
+						</div>
+					</div>
+					<ul class="features__list features__list--pretty">
+						<li class="features__item wow animate__animated animate__zoomIn">Собственный фон в интерфейсе(по
+							<br> желанию)</li>
+						<li class="features__item wow animate__animated animate__zoomIn">Брендирование - логотип и цвета
+							<br> компании</li>
+						<li class="features__item wow animate__animated animate__zoomIn">Единая корпоративная вопросная база
+							<br> - пакеты вопросов, созданные в одном
+							<br> филиале, можно использовать во всех</li>
+						<li class="features__item wow animate__animated animate__zoomIn">Связь корпоративных аккаунтов для
+							<br> проведения игр между филиалами</li>
+						<li class="features__item wow animate__animated animate__zoomIn">10,000 минут аудио/видео стрима в
+							<br> рамках подписки бесплатно.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="company">
+			<div class="container">
+				<h2 class="section__title wow animate__animated animate__fadeInUp">Нам <span>доверяют</span></h2>
+				<ul class="company__list wow animate__animated animate__bounceInUp">
+					<li class="company__item"> <img src="img/companys/kazatomprom.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/mondelez.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/philip_morris.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/varny_capital.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/marsh.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/sber.png" alt=""></li>
+					<li class="company__item"> <img src="img/companys/ey.png" alt=""></li>
+				</ul>
+			</div>
+		</section>
+		<section class="form">
+			<div class="container">
+				<form class="main-form">
+					<h2 class="form__title wow animate__animated animate__slideInDown">Форма <span>обратной связи</span></h2>
+					<input class="form__input wow animate__animated animate__flipInX" type="text" placeholder="Ваше имя*" required>
+					<input class="form__input wow animate__animated animate__flipInX" type="tel" placeholder="Контактный телефон*" required>
+					<input class="form__input wow animate__animated animate__flipInX" type="text" placeholder="Сообщение*" required>
+					<button class="form__btn wow animate__animated animate__fadeIn" type="submit">Отправить</button> <img class="form__icon wow animate__animated animate__fadeInRight" src="img/illustrations/illustration3.webp" alt=""></form>
+				<p class="form__about wow animate__animated animate__fadeIn">Мы всегда готовы обсудить детали или
+					<br> дать дополнительную консультацию</p>
+				<ul class="contacts">
+					<li class="contacts__item wow animate__animated animate__flipInX">
+						<a class="contacts__link contacts__link--first" href="mailto:info@qgame.online" target="_blank">
+							<svg class="contacts__icon icon" xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20">
+								<path d="M452,4772.4a3.45,3.45,0,0,0-3.5-3.4h-21a3.45,3.45,0,0,0-3.5,3.4v13.2a3.45,3.45,0,0,0,3.5,3.4h21a3.45,3.45,0,0,0,3.5-3.4v-13.2Zm-3.5-1.14a1.22,1.22,0,0,1,.778.29l-11.1,7.4-11.461-7.4a1.171,1.171,0,0,1,.778-0.29h21Zm0,15.47h-21a1.145,1.145,0,0,1-1.167-1.13v-11.59l11.216,7.25a1.191,1.191,0,0,0,1.306,0l10.812-7.22v11.56A1.145,1.145,0,0,1,448.5,4786.73Z" transform="translate(-424 -4769)" /> </svg> info@qgame.online </a>
+					</li>
+					<li class="contacts__item wow animate__animated animate__flipInX">
+						<a class="contacts__link" href="https://api.whatsapp.com/send?phone=77017420111" target="_blank">
+							<svg class="contacts__icon icon" xmlns="http://www.w3.org/2000/svg" width="28.656" height="29.56" viewBox="0 0 28.656 29.56">
+								<path d="M779.176,4764a14.227,14.227,0,0,0-14.061,14.39,14.6,14.6,0,0,0,2.018,7.44l-2.538,7.72,7.785-2.55a13.753,13.753,0,0,0,6.8,1.79A14.4,14.4,0,0,0,779.176,4764Zm0,2.41a11.856,11.856,0,0,0-11.705,11.98,12.117,12.117,0,0,0,2.229,7.03l-1.462,4.45,4.5-1.48a11.391,11.391,0,0,0,6.44,1.99A11.988,11.988,0,0,0,779.176,4766.41Zm7.266,15.71a1.8,1.8,0,0,0-.672-0.46c-0.353-.19-2.084-1.15-2.409-1.29a0.558,0.558,0,0,0-.815.16c-0.252.35-.971,1.16-1.188,1.39a0.538,0.538,0,0,1-.782.06,9.442,9.442,0,0,1-2.82-1.93,10.9,10.9,0,0,1-1.9-2.62,0.534,0.534,0,0,1,.185-0.74c0.167-.16.375-0.42,0.562-0.63a2.377,2.377,0,0,0,.381-0.6,0.681,0.681,0,0,0-.006-0.64c-0.084-.19-0.735-2.02-1.007-2.77s-0.576-.64-0.785-0.64-0.448-.05-0.687-0.06a1.314,1.314,0,0,0-.974.42,4.174,4.174,0,0,0-1.369,3.02,7.2,7.2,0,0,0,1.327,3.85c0.17,0.26,2.333,4.18,5.928,5.79s3.614,1.12,4.274,1.08a3.62,3.62,0,0,0,2.487-1.65A3.147,3.147,0,0,0,786.442,4782.12Z" transform="translate(-764.594 -4764)" /> </svg> +77017420111 </a>
+					</li>
+					<li class="contacts__item wow animate__animated animate__flipInX">
+						<a class="contacts__link" href="https://t.me/quantumgame" target="_blank">
+							<svg class="contacts__icon icon" xmlns="http://www.w3.org/2000/svg" width="30.03" height="25.78" viewBox="0 0 30.03 25.78">
+								<path d="M1047.02,4766.42l-26.89,10.34c-1.47.43-1.42,1.91-.33,2.26l6.73,2.14,2.58,8.02c0.31,0.88.57,1.21,1.1,1.22a1.8,1.8,0,0,0,1.37-.72c0.68-.66,1.72-1.68,3.37-3.31l7.01,5.26c1.29,0.72,2.22.35,2.54-1.22l4.39-22.07C1049.36,4766.42,1048.25,4765.85,1047.02,4766.42Zm-19.43,14.25,15.32-9.77c0.75-.51.99,0.06,0.65,0.46l-12.71,11.62-0.66,5.79Z" transform="translate(-1019 -4766.22)" /> </svg> +77017420111 </a>
+					</li>
+					<li class="contacts__item wow animate__animated animate__flipInX">
+						<a class="contacts__link contacts__link--last" href="https://play.qgame.online/support" target="_blank">
+							<svg class="contacts__icon icon" xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26">
+								<path d="M1301.19,4766.01h-5.68a8.8,8.8,0,0,0-8.15,5.2,1.275,1.275,0,0,0-.55,0c-3.31.61-4.81,3.93-4.81,6.78v12.87a1.13,1.13,0,0,0,.6.99,1.3,1.3,0,0,0,.61.14,1.2,1.2,0,0,0,.64-0.19l3.27-2.07h9.41a6.774,6.774,0,0,0,5.83-3.39h2.54l3.27,2.08a1.285,1.285,0,0,0,.66.18,1.192,1.192,0,0,0,.56-0.14,1.12,1.12,0,0,0,.61-0.99v-12.92A8.686,8.686,0,0,0,1301.19,4766.01Zm-4.66,21.46h-9.76a1.215,1.215,0,0,0-.64.18l-1.76,1.12v-10.84c0-1.46.67-3.68,2.39-4.36a8.056,8.056,0,0,0-.06.98v3.25a8.7,8.7,0,0,0,8.81,8.54h4.01A5.061,5.061,0,0,1,1296.53,4787.47Zm11.14-2.09-1.76-1.13a1.19,1.19,0,0,0-.64-0.18h-9.76a6.4,6.4,0,0,1-6.48-6.27v-3.25a6.387,6.387,0,0,1,6.48-6.28h5.68a6.387,6.387,0,0,1,6.48,6.28v10.83Zm-2.91-6.95a1.151,1.151,0,0,1-1.17,1.13h-10.48a1.131,1.131,0,1,1,0-2.26h10.48A1.151,1.151,0,0,1,1304.76,4778.43Zm0-4.52a1.144,1.144,0,0,1-1.17,1.13h-10.48a1.131,1.131,0,1,1,0-2.26h10.48A1.151,1.151,0,0,1,1304.76,4773.91Z" transform="translate(-1282 -4766)" /> </svg> Служба
+							<br> поддержки </a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<p class="copyright">Quantum Cloud © 2016-2021</p>
+				<ul class="social">
+					<li class="social__item wow animate__animated animate__flipInY">
+						<a class="social__link" href="https://www.facebook.com/quantumgamekz/" target="_blank">
+							<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="34.43" viewBox="0 0 18 34.43">
+								<path d="M1259.99,4952.08v-15.71h5.3l0.8-6.12h-6.1v-3.91c0-1.77.5-2.98,3.05-2.98h3.26v-5.47a42.465,42.465,0,0,0-4.75-.24c-4.69,0-7.91,2.85-7.91,8.09v4.51h-5.31v6.12h5.31v15.71h6.35Z" transform="translate(-1248.31 -4917.66)" /> </svg>
+						</a>
+					</li>
+					<li class="social__item wow animate__animated animate__flipInY">
+						<a class="social__link" href="https://www.instagram.com/quantumcloud.kz/" target="_blank">
+							<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="29.19" height="29.07" viewBox="0 0 29.19 29.07">
+								<path d="M1338.28,4922.95c3.9,0,4.36.01,5.9,0.08a8.576,8.576,0,0,1,2.72.5,4.689,4.689,0,0,1,1.68,1.09,4.566,4.566,0,0,1,1.09,1.67,7.939,7.939,0,0,1,.5,2.7c0.07,1.53.09,1.99,0.09,5.87s-0.02,4.34-.09,5.88a7.865,7.865,0,0,1-.5,2.69,4.6,4.6,0,0,1-1.09,1.68,4.664,4.664,0,0,1-1.68,1.08,8.03,8.03,0,0,1-2.72.5c-1.54.07-2,.09-5.9,0.09s-4.36-.02-5.9-0.09a7.956,7.956,0,0,1-2.71-.5,4.58,4.58,0,0,1-1.68-1.08,4.48,4.48,0,0,1-1.09-1.68,7.865,7.865,0,0,1-.5-2.69c-0.07-1.54-.09-2-0.09-5.88s0.02-4.34.09-5.87a7.939,7.939,0,0,1,.5-2.7,4.442,4.442,0,0,1,1.09-1.67,4.6,4.6,0,0,1,1.68-1.09,8.5,8.5,0,0,1,2.71-.5c1.54-.07,2-0.08,5.9-0.08m0-2.62c-3.96,0-4.46.02-6.02,0.09a10.743,10.743,0,0,0-3.54.67,7.259,7.259,0,0,0-2.59,1.68,7.14,7.14,0,0,0-1.68,2.57,10.452,10.452,0,0,0-.68,3.53c-0.07,1.55-.09,2.05-0.09,5.99s0.02,4.45.09,6a10.336,10.336,0,0,0,.68,3.52,7.372,7.372,0,0,0,4.27,4.25,10.715,10.715,0,0,0,3.54.68c1.56,0.07,2.06.09,6.02,0.09s4.47-.02,6.02-0.09a10.727,10.727,0,0,0,3.55-.68,7.181,7.181,0,0,0,2.59-1.67,7.092,7.092,0,0,0,1.68-2.58,10.583,10.583,0,0,0,.68-3.52c0.07-1.55.09-2.05,0.09-6s-0.02-4.44-.09-5.99a10.7,10.7,0,0,0-.68-3.53,7.14,7.14,0,0,0-1.68-2.57,7.347,7.347,0,0,0-2.59-1.68,10.756,10.756,0,0,0-3.55-.67c-1.55-.07-2.05-0.09-6.02-0.09h0Zm0,7.07a7.465,7.465,0,1,0,7.5,7.46A7.481,7.481,0,0,0,1338.28,4927.4Zm0,12.31a4.845,4.845,0,1,1,4.87-4.85A4.85,4.85,0,0,1,1338.28,4939.71Zm9.55-12.6a1.75,1.75,0,1,1-1.75-1.75A1.743,1.743,0,0,1,1347.83,4927.11Z" transform="translate(-1323.69 -4920.34)" /> </svg>
+						</a>
+					</li>
+					<li class="social__item wow animate__animated animate__flipInY">
+						<a class="social__link" href="https://www.youtube.com/channel/UCDc8sz4OOHj79jSaWteDNOA?sub_confirmation=1" target="_blank">
+							<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25.59" height="30.85" viewBox="0 0 25.59 30.85">
+								<path d="M1427.09,4939.35c-0.52,0-.78.4-0.78,1.18v0.79h1.55v-0.79C1427.86,4939.75,1427.6,4939.35,1427.09,4939.35Zm3.78-4.32a3.219,3.219,0,0,0-2.76-2.51,131.7,131.7,0,0,0-19.19,0,3.219,3.219,0,0,0-2.76,2.51,40.185,40.185,0,0,0-.01,12.06,3.219,3.219,0,0,0,2.77,2.5,127.913,127.913,0,0,0,19.18,0,3.219,3.219,0,0,0,2.77-2.5,27.58,27.58,0,0,0,.45-6.03A26.976,26.976,0,0,0,1430.87,4935.03Zm-17.86,1.74h-1.85v9.81h-1.73v-9.81h-1.82v-1.61h5.4v1.61Zm4.68,9.81h-1.55v-0.93a2.491,2.491,0,0,1-1.77,1.04,0.956,0.956,0,0,1-1-.63,4.517,4.517,0,0,1-.13-1.26v-6.73h1.54v6.26a3.379,3.379,0,0,0,.02.6,0.351,0.351,0,0,0,.36.36,1.379,1.379,0,0,0,.98-0.72v-6.5h1.55v8.51Zm5.88-2.56a6.927,6.927,0,0,1-.16,1.72,1.225,1.225,0,0,1-1.24.95,2.1,2.1,0,0,1-1.6-.94v0.83h-1.54v-11.42h1.54v3.73a2.1,2.1,0,0,1,1.6-.92,1.224,1.224,0,0,1,1.24.96,6.613,6.613,0,0,1,.16,1.71v3.38Zm5.84-1.42h-3.1v1.51c0,0.79.26,1.18,0.79,1.18a0.669,0.669,0,0,0,.7-0.62c0.01-.08.03-0.42,0.03-1.04h1.58v0.22c0,0.5-.02.84-0.03,1a2.261,2.261,0,0,1-.37.92,2.123,2.123,0,0,1-1.87.92,2.218,2.218,0,0,1-1.87-.87,3.246,3.246,0,0,1-.5-2v-2.98a3.276,3.276,0,0,1,.48-2,2.205,2.205,0,0,1,1.85-.87,2.156,2.156,0,0,1,1.83.87,3.347,3.347,0,0,1,.48,2v1.76Zm-8.06-3.25a1.108,1.108,0,0,0-.78.38v5.18a1.108,1.108,0,0,0,.78.38c0.44,0,.67-0.38.67-1.14v-3.64C1422.02,4939.75,1421.79,4939.35,1421.35,4939.35Zm-5.52-20.26h-1.75l-1.18,4.53-1.24-4.53h-1.82c0.37,1.07.75,2.15,1.11,3.22a28.1,28.1,0,0,1,1.06,3.65v4.66h1.74v-4.66Zm4.63,8.75v-3.01a3.344,3.344,0,0,0-.48-2.02,2.12,2.12,0,0,0-1.82-.88,2.151,2.151,0,0,0-1.83.88,3.344,3.344,0,0,0-.48,2.02v3.01a3.324,3.324,0,0,0,.48,2.02,2.151,2.151,0,0,0,1.83.88,2.12,2.12,0,0,0,1.82-.88A3.324,3.324,0,0,0,1420.46,4927.84Zm-1.56.3c0,0.79-.24,1.19-0.74,1.19s-0.75-.4-0.75-1.19v-3.62c0-.79.24-1.19,0.75-1.19s0.74,0.4.74,1.19v3.62Zm7.35,2.48v-8.59h-1.57v6.57a1.353,1.353,0,0,1-.98.73,0.356,0.356,0,0,1-.37-0.37,3.379,3.379,0,0,1-.02-0.6v-6.33h-1.56v6.8a4.116,4.116,0,0,0,.14,1.27,0.956,0.956,0,0,0,1.01.64,2.491,2.491,0,0,0,1.78-1.05v0.93h1.57Z" transform="translate(-1405.72 -4919.09)" /> </svg>
+						</a>
+					</li>
+					<li class="social__item wow animate__animated animate__flipInY">
+						<a class="social__link" href="https://vk.com/guantum_game" target="_blank">
+							<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="36.06" height="20.59" viewBox="0 0 36.06 20.59">
+								<path d="M1498.33,4944.53h2.15a1.839,1.839,0,0,0,.99-0.43,1.609,1.609,0,0,0,.29-0.95s-0.04-2.89,1.3-3.32,3.03,2.8,4.83,4.04a3.431,3.431,0,0,0,2.39.73l4.82-.07s2.52-.16,1.33-2.14c-0.1-.16-0.7-1.46-3.59-4.14-3.02-2.81-2.61-2.35,1.03-7.2,2.21-2.95,3.1-4.76,2.82-5.53-0.26-.73-1.89-0.54-1.89-0.54l-5.42.03a1.239,1.239,0,0,0-.7.13,1.409,1.409,0,0,0-.48.58,31.557,31.557,0,0,1-2.01,4.23c-2.41,4.1-3.38,4.32-3.77,4.06-0.92-.59-0.69-2.38-0.69-3.66,0-3.97.6-5.63-1.17-6.06a9.641,9.641,0,0,0-2.53-.25,11.745,11.745,0,0,0-4.5.46c-0.62.31-1.1,0.98-.81,1.02a2.457,2.457,0,0,1,1.6.8,5.225,5.225,0,0,1,.54,2.46s0.32,4.67-.75,5.26c-0.73.39-1.73-.42-3.88-4.14a34.12,34.12,0,0,1-1.94-4.01,1.587,1.587,0,0,0-.45-0.61,2.225,2.225,0,0,0-.83-0.33l-5.15.03a1.737,1.737,0,0,0-1.06.36,1.139,1.139,0,0,0-.02.92s4.03,9.44,8.6,14.19a12.358,12.358,0,0,0,8.95,4.08h0Z" transform="translate(-1480.69 -4924.03)" /> </svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+	$('.company__list').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: true,
+		nextArrow: '<button type="button" class="arrow arrow--next"><img src="img/icons/arrow-right.png"></button>',
+		prevArrow: '<button type="button" class="arrow arrow--prev"><img src="img/icons/arrow-left.png"></button>',
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: false
+			}
+		}, {
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: false
+			}
+		}, {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: false,
+			}
+		}, {
+			breakpoint: 665,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: false,
+			}
+		}]
+	});
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+	<script>
+	wow = new WOW({
+		boxClass: 'wow',
+		animateClass: 'animated',
+		offset: 100,
+		mobile: true,
+		live: true
+	});
+	wow.init();
+	</script>
+</body>
+
+</html>
